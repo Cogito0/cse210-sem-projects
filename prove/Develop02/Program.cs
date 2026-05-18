@@ -12,7 +12,7 @@ class Program
 'S' for save current journal
 'L' for load journal
 'Q' for quit");
-            Console.WriteLine($"{Journal._entries.Count} entries in current journal.");
+            Console.WriteLine($"{Journal._entries.Count + Journal.entries.Length} entries in current journal.");
             answer = Console.ReadLine();
             if (answer == "N")
             {
