@@ -8,6 +8,6 @@ class Entry
 
     public string DisplayEntry()
     {
-        return $"{_name} {_date}\n{_prompt}\n{_response}";
+        return $"{_name} {_date}\n{_prompt}\n{_response}*";
     }
 }

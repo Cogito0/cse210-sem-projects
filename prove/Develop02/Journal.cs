@@ -23,11 +23,15 @@ class Journal
         string fileName = Console.ReadLine();
         using (StreamWriter outputFile = new StreamWriter(fileName))
         {
-            outputFile.WriteLine("");
+            foreach (Entry e in _entries)
+            {
+                outputFile.WriteLine(e.DisplayEntry() + "\n");
+            }
         }
     }
 
     public static void LoadFromFile()
     {
+
     }
 }
